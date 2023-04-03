@@ -166,7 +166,12 @@ public class TestStack implements Comparator<Person> {
 
     @Test
     public void TestComparable(){
+        Person person = new Person("Tim", 1997);
+        Person person2 = new Person("Jason", 1998);
 
+        compare(person, person2);
+
+        Assert.assertFalse(person.equals(person2));
     }
 
     @Override
